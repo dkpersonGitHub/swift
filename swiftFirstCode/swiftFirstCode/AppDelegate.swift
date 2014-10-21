@@ -9,13 +9,49 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate {
 
     var window: UIWindow?
-
+//    var naviController :UINavigationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.backgroundColor = UIColor.whiteColor()
+        
+        var firstController = firstViewController(nibName: "firstViewController", bundle: nil)
+        var secController   = secViewController(nibName:   "secViewController"  , bundle: nil)
+        var thirdController = thirdViewController(nibName: "thirdViewController", bundle: nil)
+        var forthController = forthViewController(nibName: "forthViewController", bundle: nil)
+        
+        firstController.title = "first"
+        secController.title   = "second"
+        thirdController.title = "third"
+        forthController.title = "forth"
+        
+        var firstNaviController = UINavigationController(rootViewController: firstController)
+        var secNaviController   = UINavigationController(rootViewController:   secController)
+        var thirdNaviController = UINavigationController(rootViewController: thirdController)
+        var forthNaviController = UINavigationController(rootViewController: forthController)
+        
+        firstNaviController.navigationBar.setBackgroundImage(UIImage(named: "a24.png"), forBarPosition: UIBarPosition.Top, barMetrics: UIBarMetrics.Default)
+        var attributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        firstNaviController.navigationBar.titleTextAttributes = attributes
+        
+        firstController.tabBarItem.image = UIImage(named: "") //tabBar单块的图片
+        
+        var tabBarController = UITabBarController()
+        tabBarController.viewControllers = [firstNaviController,secNaviController,thirdNaviController,forthNaviController]
+        tabBarController.tabBar.backgroundImage = UIImage(named: "") //背景图片
+        tabBarController.tabBar.backgroundColor = UIColor.blackColor() //背景颜色
+        tabBarController.tabBarItem.image = UIImage(named: "") //tabbar 图片
+        tabBarController.delegate = self
+        
+        self.window!.rootViewController = tabBarController
+        self.window!.makeKeyAndVisible()
+        
+      
         return true
     }
 
