@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7265994419F7E66C00BAC252 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265994219F7E66C00BAC252 /* TableViewController.swift */; };
+		7265994519F7E66C00BAC252 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7265994319F7E66C00BAC252 /* TableViewController.xib */; };
+		7265994819F7E75300BAC252 /* userInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265994619F7E75300BAC252 /* userInterfaceViewController.swift */; };
+		7265994919F7E75300BAC252 /* userInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7265994719F7E75300BAC252 /* userInterfaceViewController.xib */; };
+		7265994B19F7E94300BAC252 /* macroHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265994A19F7E94300BAC252 /* macroHeader.swift */; };
+		7265994E19F7EBF000BAC252 /* musicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265994C19F7EBF000BAC252 /* musicViewController.swift */; };
+		7265994F19F7EBF000BAC252 /* musicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7265994D19F7EBF000BAC252 /* musicViewController.xib */; };
+		7265995119F7ECDB00BAC252 /* 花木兰.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7265995019F7ECDB00BAC252 /* 花木兰.mp3 */; };
 		7281884719F6948F00B7D926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281884619F6948F00B7D926 /* AppDelegate.swift */; };
 		7281884E19F6948F00B7D926 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7281884D19F6948F00B7D926 /* Images.xcassets */; };
 		7281885119F6948F00B7D926 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7281884F19F6948F00B7D926 /* LaunchScreen.xib */; };
@@ -83,6 +91,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7265994219F7E66C00BAC252 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7265994319F7E66C00BAC252 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		7265994619F7E75300BAC252 /* userInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userInterfaceViewController.swift; sourceTree = "<group>"; };
+		7265994719F7E75300BAC252 /* userInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = userInterfaceViewController.xib; sourceTree = "<group>"; };
+		7265994A19F7E94300BAC252 /* macroHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macroHeader.swift; sourceTree = "<group>"; };
+		7265994C19F7EBF000BAC252 /* musicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicViewController.swift; sourceTree = "<group>"; };
+		7265994D19F7EBF000BAC252 /* musicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = musicViewController.xib; sourceTree = "<group>"; };
+		7265995019F7ECDB00BAC252 /* 花木兰.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "花木兰.mp3"; path = "swiftFirstCode/花木兰.mp3"; sourceTree = "<group>"; };
 		7281884119F6948F00B7D926 /* swiftFirstCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftFirstCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7281884519F6948F00B7D926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7281884619F6948F00B7D926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +189,7 @@
 		7281883819F6948F00B7D926 = {
 			isa = PBXGroup;
 			children = (
+				7265995019F7ECDB00BAC252 /* 花木兰.mp3 */,
 				728188D019F6A41C00B7D926 /* Images */,
 				7281884319F6948F00B7D926 /* swiftFirstCode */,
 				728188BC19F6A1C000B7D926 /* firstFounction */,
@@ -197,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				7281884619F6948F00B7D926 /* AppDelegate.swift */,
+				7265994A19F7E94300BAC252 /* macroHeader.swift */,
 				7281884D19F6948F00B7D926 /* Images.xcassets */,
 				7281884F19F6948F00B7D926 /* LaunchScreen.xib */,
 				7281884419F6948F00B7D926 /* Supporting Files */,
@@ -234,6 +252,12 @@
 			children = (
 				728188C019F6A20B00B7D926 /* firstViewController.swift */,
 				728188C119F6A20B00B7D926 /* firstViewController.xib */,
+				7265994219F7E66C00BAC252 /* TableViewController.swift */,
+				7265994319F7E66C00BAC252 /* TableViewController.xib */,
+				7265994619F7E75300BAC252 /* userInterfaceViewController.swift */,
+				7265994719F7E75300BAC252 /* userInterfaceViewController.xib */,
+				7265994C19F7EBF000BAC252 /* musicViewController.swift */,
+				7265994D19F7EBF000BAC252 /* musicViewController.xib */,
 			);
 			name = firstFounction;
 			path = swiftFirstCode/firstFounction;
@@ -428,6 +452,7 @@
 				7281893319F6A41C00B7D926 /* icon2.png in Resources */,
 				7281892319F6A41C00B7D926 /* a32.png in Resources */,
 				7281892E19F6A41C00B7D926 /* a43.png in Resources */,
+				7265994F19F7EBF000BAC252 /* musicViewController.xib in Resources */,
 				7281890E19F6A41C00B7D926 /* a11.png in Resources */,
 				7281891119F6A41C00B7D926 /* a14.png in Resources */,
 				7281893219F6A41C00B7D926 /* icon1.png in Resources */,
@@ -438,6 +463,7 @@
 				7281891419F6A41C00B7D926 /* a17.png in Resources */,
 				7281892C19F6A41C00B7D926 /* a41.png in Resources */,
 				7281891519F6A41C00B7D926 /* a18.png in Resources */,
+				7265994919F7E75300BAC252 /* userInterfaceViewController.xib in Resources */,
 				7281892119F6A41C00B7D926 /* a30.png in Resources */,
 				7281892F19F6A41C00B7D926 /* a44.png in Resources */,
 				7281893619F6A41C00B7D926 /* icon5.png in Resources */,
@@ -447,6 +473,7 @@
 				7281891819F6A41C00B7D926 /* a21.png in Resources */,
 				7281891319F6A41C00B7D926 /* a16.png in Resources */,
 				728188C719F6A21400B7D926 /* secViewController.xib in Resources */,
+				7265994519F7E66C00BAC252 /* TableViewController.xib in Resources */,
 				7281891719F6A41C00B7D926 /* a20.png in Resources */,
 				7281893419F6A41C00B7D926 /* icon3.png in Resources */,
 				7281892D19F6A41C00B7D926 /* a42.png in Resources */,
@@ -455,6 +482,7 @@
 				7281891B19F6A41C00B7D926 /* a24.png in Resources */,
 				7281892419F6A41C00B7D926 /* a33.png in Resources */,
 				7281890F19F6A41C00B7D926 /* a12.png in Resources */,
+				7265995119F7ECDB00BAC252 /* 花木兰.mp3 in Resources */,
 				7281891219F6A41C00B7D926 /* a15.png in Resources */,
 				7281892B19F6A41C00B7D926 /* a40.png in Resources */,
 				7281890519F6A41C00B7D926 /* a02.png in Resources */,
@@ -483,10 +511,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				728188C619F6A21400B7D926 /* secViewController.swift in Sources */,
+				7265994419F7E66C00BAC252 /* TableViewController.swift in Sources */,
 				728188CE19F6A22A00B7D926 /* forthViewController.swift in Sources */,
 				728188CA19F6A21F00B7D926 /* thirdViewController.swift in Sources */,
 				7281884719F6948F00B7D926 /* AppDelegate.swift in Sources */,
+				7265994E19F7EBF000BAC252 /* musicViewController.swift in Sources */,
 				728188C219F6A20B00B7D926 /* firstViewController.swift in Sources */,
+				7265994819F7E75300BAC252 /* userInterfaceViewController.swift in Sources */,
+				7265994B19F7E94300BAC252 /* macroHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +702,7 @@
 				7281886219F6948F00B7D926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7281886319F6948F00B7D926 /* Build configuration list for PBXNativeTarget "swiftFirstCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -678,6 +711,7 @@
 				7281886519F6948F00B7D926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

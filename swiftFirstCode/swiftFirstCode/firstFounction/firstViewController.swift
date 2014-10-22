@@ -10,11 +10,23 @@ import UIKit
 
 class firstViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+    }
+
+    @IBAction func pushTableView(){
+        
+        var controller = TableViewController(nibName: "TableViewController", bundle: nil)
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    @IBAction func pushMusicView(){
+        
+        var controller = musicViewController(nibName: "musicViewController", bundle: nil)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,14 +35,5 @@ class firstViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
