@@ -7,13 +7,28 @@
 //
 
 import UIKit
-
+import AVFoundation
 class musicViewController: UIViewController {
+    
+    var audioPlayer:AVAudioPlayer?
+    
+    @IBOutlet  var planSlider:UISlider?
+    @IBOutlet  var voiceSlider:UISlider?
+    @IBOutlet var swich:UISwitch?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var musicPath:String = NSBundle.mainBundle().pathForResource("花木兰", ofType:"mp3")!
+        var musicUrl = NSURL(fileURLWithPath: musicPath)
+        audioPlayer = AVAudioPlayer(contentsOfURL: musicUrl, error: nil)
+        
+        voiceSlider?.minimumValue = 0.0
+        voiceSlider?.maximumValue = 10.0
+        
+        voiceSlider?.value = 5
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +37,27 @@ class musicViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func Play(sender:UIButton){
+        sender.selected = !sender.selected
+        if sender.selected == true
+        {
+            audioPlayer?.play()
+        }else{
+            audioPlayer?.pause()
+        }
+        
     }
-    */
+    @IBAction func stop(){
+        
+        audioPlayer?.stop()
+    }
+    @IBAction func Recycle(){
+        
+    }
+    @IBAction func changVoice(){
+        
+        audioPlayer!.volume = voiceSlider!.value
+        
+    }
 
 }

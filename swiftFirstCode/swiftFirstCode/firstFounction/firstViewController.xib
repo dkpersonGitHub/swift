@@ -13,7 +13,33 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sps-Ef-kTO">
+                    <rect key="frame" x="39" y="80" width="67" height="30"/>
+                    <state key="normal" title="tableView">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushTableView" destination="-1" eventType="touchUpInside" id="CSA-KF-qXt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSs-RC-qeS">
+                    <rect key="frame" x="173" y="80" width="60" height="30"/>
+                    <state key="normal" title="music">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushMusicView" destination="-1" eventType="touchUpInside" id="zg1-UY-YX2"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Sps-Ef-kTO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="BX9-hn-CpD"/>
+                <constraint firstItem="vSs-RC-qeS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Dnb-2H-404"/>
+                <constraint firstItem="Sps-Ef-kTO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Nhl-K7-Huq"/>
+                <constraint firstAttribute="trailing" secondItem="vSs-RC-qeS" secondAttribute="trailing" constant="87" id="mBq-SY-ZND"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

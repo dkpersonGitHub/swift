@@ -8,6 +8,15 @@
 
 import UIKit
 
+
+var screen_width = UIScreen.mainScreen().bounds.size.width
+var screen_hight = UIScreen.mainScreen().bounds.size.height
+
+
+
+
+
+
 class macroHeader: NSObject {
    
 }
