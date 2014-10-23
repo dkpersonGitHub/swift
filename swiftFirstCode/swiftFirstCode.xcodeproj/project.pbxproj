@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72219B1F19F951330075C6CB /* vedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72219B1D19F951330075C6CB /* vedioViewController.swift */; };
+		72219B2019F951330075C6CB /* vedioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72219B1E19F951330075C6CB /* vedioViewController.xib */; };
+		72219B2419F9594C0075C6CB /* 花木兰.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72219B2319F9594C0075C6CB /* 花木兰.mp3 */; };
 		7265994419F7E66C00BAC252 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265994219F7E66C00BAC252 /* TableViewController.swift */; };
 		7265994519F7E66C00BAC252 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7265994319F7E66C00BAC252 /* TableViewController.xib */; };
 		7265994819F7E75300BAC252 /* userInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265994619F7E75300BAC252 /* userInterfaceViewController.swift */; };
@@ -14,7 +17,6 @@
 		7265994B19F7E94300BAC252 /* macroHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265994A19F7E94300BAC252 /* macroHeader.swift */; };
 		7265994E19F7EBF000BAC252 /* musicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265994C19F7EBF000BAC252 /* musicViewController.swift */; };
 		7265994F19F7EBF000BAC252 /* musicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7265994D19F7EBF000BAC252 /* musicViewController.xib */; };
-		7265995119F7ECDB00BAC252 /* 花木兰.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7265995019F7ECDB00BAC252 /* 花木兰.mp3 */; };
 		7281884719F6948F00B7D926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281884619F6948F00B7D926 /* AppDelegate.swift */; };
 		7281884E19F6948F00B7D926 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7281884D19F6948F00B7D926 /* Images.xcassets */; };
 		7281885119F6948F00B7D926 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7281884F19F6948F00B7D926 /* LaunchScreen.xib */; };
@@ -91,6 +93,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72219B1D19F951330075C6CB /* vedioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vedioViewController.swift; sourceTree = "<group>"; };
+		72219B1E19F951330075C6CB /* vedioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vedioViewController.xib; sourceTree = "<group>"; };
+		72219B2319F9594C0075C6CB /* 花木兰.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "花木兰.mp3"; path = "swiftFirstCode/花木兰.mp3"; sourceTree = "<group>"; };
+		72219B2519F959550075C6CB /* 倒带.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "倒带.mp4"; path = "swiftFirstCode/倒带.mp4"; sourceTree = "<group>"; };
 		7265994219F7E66C00BAC252 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7265994319F7E66C00BAC252 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		7265994619F7E75300BAC252 /* userInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userInterfaceViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +104,6 @@
 		7265994A19F7E94300BAC252 /* macroHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macroHeader.swift; sourceTree = "<group>"; };
 		7265994C19F7EBF000BAC252 /* musicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicViewController.swift; sourceTree = "<group>"; };
 		7265994D19F7EBF000BAC252 /* musicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = musicViewController.xib; sourceTree = "<group>"; };
-		7265995019F7ECDB00BAC252 /* 花木兰.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "花木兰.mp3"; path = "swiftFirstCode/花木兰.mp3"; sourceTree = "<group>"; };
 		7281884119F6948F00B7D926 /* swiftFirstCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftFirstCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7281884519F6948F00B7D926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7281884619F6948F00B7D926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -189,7 +194,8 @@
 		7281883819F6948F00B7D926 = {
 			isa = PBXGroup;
 			children = (
-				7265995019F7ECDB00BAC252 /* 花木兰.mp3 */,
+				72219B2319F9594C0075C6CB /* 花木兰.mp3 */,
+				72219B2519F959550075C6CB /* 倒带.mp4 */,
 				728188D019F6A41C00B7D926 /* Images */,
 				7281884319F6948F00B7D926 /* swiftFirstCode */,
 				728188BC19F6A1C000B7D926 /* firstFounction */,
@@ -258,6 +264,8 @@
 				7265994719F7E75300BAC252 /* userInterfaceViewController.xib */,
 				7265994C19F7EBF000BAC252 /* musicViewController.swift */,
 				7265994D19F7EBF000BAC252 /* musicViewController.xib */,
+				72219B1D19F951330075C6CB /* vedioViewController.swift */,
+				72219B1E19F951330075C6CB /* vedioViewController.xib */,
 			);
 			name = firstFounction;
 			path = swiftFirstCode/firstFounction;
@@ -434,6 +442,7 @@
 			files = (
 				7281893119F6A41C00B7D926 /* icon.png in Resources */,
 				7281892819F6A41C00B7D926 /* a37.png in Resources */,
+				72219B2019F951330075C6CB /* vedioViewController.xib in Resources */,
 				7281891E19F6A41C00B7D926 /* a27.png in Resources */,
 				7281893019F6A41C00B7D926 /* back.png in Resources */,
 				7281891C19F6A41C00B7D926 /* a25.png in Resources */,
@@ -482,12 +491,12 @@
 				7281891B19F6A41C00B7D926 /* a24.png in Resources */,
 				7281892419F6A41C00B7D926 /* a33.png in Resources */,
 				7281890F19F6A41C00B7D926 /* a12.png in Resources */,
-				7265995119F7ECDB00BAC252 /* 花木兰.mp3 in Resources */,
 				7281891219F6A41C00B7D926 /* a15.png in Resources */,
 				7281892B19F6A41C00B7D926 /* a40.png in Resources */,
 				7281890519F6A41C00B7D926 /* a02.png in Resources */,
 				7281892619F6A41C00B7D926 /* a35.png in Resources */,
 				7281892519F6A41C00B7D926 /* a34.png in Resources */,
+				72219B2419F9594C0075C6CB /* 花木兰.mp3 in Resources */,
 				7281890D19F6A41C00B7D926 /* a10.png in Resources */,
 				7281890919F6A41C00B7D926 /* a06.png in Resources */,
 				7281884E19F6948F00B7D926 /* Images.xcassets in Resources */,
@@ -516,6 +525,7 @@
 				728188CA19F6A21F00B7D926 /* thirdViewController.swift in Sources */,
 				7281884719F6948F00B7D926 /* AppDelegate.swift in Sources */,
 				7265994E19F7EBF000BAC252 /* musicViewController.swift in Sources */,
+				72219B1F19F951330075C6CB /* vedioViewController.swift in Sources */,
 				728188C219F6A20B00B7D926 /* firstViewController.swift in Sources */,
 				7265994819F7E75300BAC252 /* userInterfaceViewController.swift in Sources */,
 				7265994B19F7E94300BAC252 /* macroHeader.swift in Sources */,
