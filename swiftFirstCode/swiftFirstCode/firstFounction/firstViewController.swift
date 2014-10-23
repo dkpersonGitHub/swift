@@ -28,7 +28,13 @@ class firstViewController: UIViewController {
         var controller = musicViewController(nibName: "musicViewController", bundle: nil)
         self.navigationController?.pushViewController(controller, animated: true)
     }
+    @IBAction func pushVedioView(){
+        
+        var controller = vedioViewController(nibName: "vedioViewController", bundle: nil)
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -48,7 +48,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
         }
-        cell?.textLabel?.text = self.items?.objectAtIndex(indexPath.row) as NSString
+        cell?.textLabel.text = self.items?.objectAtIndex(indexPath.row) as NSString
         
         return cell!
     }

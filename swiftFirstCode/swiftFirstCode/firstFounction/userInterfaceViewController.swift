@@ -48,7 +48,7 @@ class userInterfaceViewController: UIViewController,UITextFieldDelegate,UIPicker
             imageView.contentMode = UIViewContentMode.ScaleAspectFit
             self.view.addSubview(imageView)
             
-            var urlImage = UIImage(data: NSData(contentsOfURL: NSURL(string: "http://c.hiphotos.baidu.com/image/w%3D310/sign=701107a80ff431adbcd245387b37ac0f/9825bc315c6034a89c795abbc813495409237675.jpg")))
+            var urlImage = UIImage(data: NSData(contentsOfURL: NSURL(string: "http://c.hiphotos.baidu.com/image/w%3D310/sign=701107a80ff431adbcd245387b37ac0f/9825bc315c6034a89c795abbc813495409237675.jpg")!)!)
             imageView.image = urlImage
         }
         if(self.title == "UISlider")
@@ -67,7 +67,7 @@ class userInterfaceViewController: UIViewController,UITextFieldDelegate,UIPicker
         if(self.title == "UIWebView")
         {
             var webView = UIWebView(frame: self.view.bounds)
-            var urlRequest = NSURLRequest(URL: NSURL(string: "http://www.baidu.com"))
+            var urlRequest = NSURLRequest(URL: NSURL(string: "http://www.baidu.com")!)
             webView.loadRequest(urlRequest)
             self.view.addSubview(webView)
         }
