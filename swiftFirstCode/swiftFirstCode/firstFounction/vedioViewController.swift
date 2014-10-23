@@ -16,10 +16,19 @@ class vedioViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        var path:String = NSBundle.mainBundle().resourcePath!
-        path += "/倒带.mp4"
-        var pathUrl = NSURL .fileURLWithPath(path)
-        vedioPlayer = MPMoviePlayerController(contentURL: pathUrl)
+        
+        var path = NSBundle.mainBundle().bundlePath
+     path += "/花木兰.mp3"
+        
+      var urlpath = NSURL(fileURLWithPath: path)!
+//        var documentFolder = NSHomeDirectory().stringByAppendingPathComponent("Documents")
+//        var folderPath = documentFolder.stringByAppendingPathComponent("Audio")
+//        var strFileType = "Record"
+//        var filePath = folderPath.stringByAppendingPathComponent(strFileType) as String
+//        filePath += "/倒带.mp4"
+//        var pathUrl = NSURL .fileURLWithPath(filePath)
+        
+        vedioPlayer = MPMoviePlayerController(contentURL: urlpath)
         vedioPlayer?.view.backgroundColor = UIColor.blackColor()
         vedioPlayer?.scalingMode = MPMovieScalingMode.AspectFit
         
