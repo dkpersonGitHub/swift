@@ -33,8 +33,18 @@ class firstViewController: UIViewController {
         var controller = vedioViewController(nibName: "vedioViewController", bundle: nil)
         self.navigationController?.pushViewController(controller, animated: true)
     }
+    @IBAction func pushGestureView(){
+        
+        var controller = gestureViewController(nibName: "gestureViewController", bundle: nil)
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 
-    
+    @IBAction func pushBaseView(){
+        
+        var controller = baseViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

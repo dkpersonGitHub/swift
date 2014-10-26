@@ -80,6 +80,10 @@
 		7281893419F6A41C00B7D926 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7281890119F6A41C00B7D926 /* icon3.png */; };
 		7281893519F6A41C00B7D926 /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7281890219F6A41C00B7D926 /* icon4.png */; };
 		7281893619F6A41C00B7D926 /* icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7281890319F6A41C00B7D926 /* icon5.png */; };
+		72B9EBB619FB8CD4003187C0 /* 倒带.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 72B9EBB519FB8CD4003187C0 /* 倒带.mp4 */; };
+		72FEE0AE19FCA00700E78D3D /* gestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FEE0AC19FCA00700E78D3D /* gestureViewController.swift */; };
+		72FEE0AF19FCA00700E78D3D /* gestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72FEE0AD19FCA00700E78D3D /* gestureViewController.xib */; };
+		72FEE0B119FCCB2E00E78D3D /* baseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FEE0B019FCCB2E00E78D3D /* baseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +100,6 @@
 		72219B1D19F951330075C6CB /* vedioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vedioViewController.swift; sourceTree = "<group>"; };
 		72219B1E19F951330075C6CB /* vedioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vedioViewController.xib; sourceTree = "<group>"; };
 		72219B2319F9594C0075C6CB /* 花木兰.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "花木兰.mp3"; path = "swiftFirstCode/花木兰.mp3"; sourceTree = "<group>"; };
-		72219B2519F959550075C6CB /* 倒带.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "倒带.mp4"; path = "swiftFirstCode/倒带.mp4"; sourceTree = "<group>"; };
 		7265994219F7E66C00BAC252 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7265994319F7E66C00BAC252 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		7265994619F7E75300BAC252 /* userInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userInterfaceViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +174,10 @@
 		7281890119F6A41C00B7D926 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
 		7281890219F6A41C00B7D926 /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon4.png; sourceTree = "<group>"; };
 		7281890319F6A41C00B7D926 /* icon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon5.png; sourceTree = "<group>"; };
+		72B9EBB519FB8CD4003187C0 /* 倒带.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "倒带.mp4"; path = "swiftFirstCode/倒带.mp4"; sourceTree = "<group>"; };
+		72FEE0AC19FCA00700E78D3D /* gestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gestureViewController.swift; sourceTree = "<group>"; };
+		72FEE0AD19FCA00700E78D3D /* gestureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gestureViewController.xib; sourceTree = "<group>"; };
+		72FEE0B019FCCB2E00E78D3D /* baseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +201,8 @@
 		7281883819F6948F00B7D926 = {
 			isa = PBXGroup;
 			children = (
+				72B9EBB519FB8CD4003187C0 /* 倒带.mp4 */,
 				72219B2319F9594C0075C6CB /* 花木兰.mp3 */,
-				72219B2519F959550075C6CB /* 倒带.mp4 */,
 				728188D019F6A41C00B7D926 /* Images */,
 				7281884319F6948F00B7D926 /* swiftFirstCode */,
 				728188BC19F6A1C000B7D926 /* firstFounction */,
@@ -266,6 +273,9 @@
 				7265994D19F7EBF000BAC252 /* musicViewController.xib */,
 				72219B1D19F951330075C6CB /* vedioViewController.swift */,
 				72219B1E19F951330075C6CB /* vedioViewController.xib */,
+				72FEE0AC19FCA00700E78D3D /* gestureViewController.swift */,
+				72FEE0AD19FCA00700E78D3D /* gestureViewController.xib */,
+				72FEE0B019FCCB2E00E78D3D /* baseViewController.swift */,
 			);
 			name = firstFounction;
 			path = swiftFirstCode/firstFounction;
@@ -448,6 +458,7 @@
 				7281891C19F6A41C00B7D926 /* a25.png in Resources */,
 				7281890C19F6A41C00B7D926 /* a09.png in Resources */,
 				7281890619F6A41C00B7D926 /* a03.png in Resources */,
+				72FEE0AF19FCA00700E78D3D /* gestureViewController.xib in Resources */,
 				7281891D19F6A41C00B7D926 /* a26.png in Resources */,
 				728188CF19F6A22A00B7D926 /* forthViewController.xib in Resources */,
 				7281892019F6A41C00B7D926 /* a29.png in Resources */,
@@ -472,6 +483,7 @@
 				7281891419F6A41C00B7D926 /* a17.png in Resources */,
 				7281892C19F6A41C00B7D926 /* a41.png in Resources */,
 				7281891519F6A41C00B7D926 /* a18.png in Resources */,
+				72B9EBB619FB8CD4003187C0 /* 倒带.mp4 in Resources */,
 				7265994919F7E75300BAC252 /* userInterfaceViewController.xib in Resources */,
 				7281892119F6A41C00B7D926 /* a30.png in Resources */,
 				7281892F19F6A41C00B7D926 /* a44.png in Resources */,
@@ -520,11 +532,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				728188C619F6A21400B7D926 /* secViewController.swift in Sources */,
+				72FEE0B119FCCB2E00E78D3D /* baseViewController.swift in Sources */,
 				7265994419F7E66C00BAC252 /* TableViewController.swift in Sources */,
 				728188CE19F6A22A00B7D926 /* forthViewController.swift in Sources */,
 				728188CA19F6A21F00B7D926 /* thirdViewController.swift in Sources */,
 				7281884719F6948F00B7D926 /* AppDelegate.swift in Sources */,
 				7265994E19F7EBF000BAC252 /* musicViewController.swift in Sources */,
+				72FEE0AE19FCA00700E78D3D /* gestureViewController.swift in Sources */,
 				72219B1F19F951330075C6CB /* vedioViewController.swift in Sources */,
 				728188C219F6A20B00B7D926 /* firstViewController.swift in Sources */,
 				7265994819F7E75300BAC252 /* userInterfaceViewController.swift in Sources */,

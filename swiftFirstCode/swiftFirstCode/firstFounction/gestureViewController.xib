@@ -1,19 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="gestureViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="gestureViewController" customModule="swiftFirstCode" customModuleProvider="target">
             <connections>
+                <outlet property="gestureLabel" destination="yLA-NG-PHs" id="gei-sn-bXr"/>
+                <outlet property="longPressGes" destination="GuD-Yf-fD8" id="em5-Dt-lfW"/>
+                <outlet property="panGes" destination="0C3-Dr-7ud" id="qg3-Lh-wDN"/>
+                <outlet property="pinchGes" destination="Icb-VK-0te" id="cWl-OE-Oud"/>
+                <outlet property="rotationGes" destination="B2N-Fv-IKj" id="bb3-et-4Li"/>
+                <outlet property="screenEdgePanGes" destination="nM6-Xm-O9d" id="0lq-mK-QyB"/>
+                <outlet property="swipeGes" destination="WXT-yL-vSz" id="OFC-Go-cYX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="please clip the label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLA-NG-PHs">
+                    <rect key="frame" x="49" y="111" width="205" height="124"/>
+                    <color key="backgroundColor" red="0.80247671649999996" green="0.84403815739999999" blue="0.90692934780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="GuD-Yf-fD8" appends="YES" id="Vpz-OV-1tn"/>
+                    </connections>
+                </label>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Icb-VK-0te" appends="YES" id="Uaq-Vv-72U"/>
+                <outletCollection property="gestureRecognizers" destination="B2N-Fv-IKj" appends="YES" id="e6d-sU-dpS"/>
+                <outletCollection property="gestureRecognizers" destination="WXT-yL-vSz" appends="YES" id="IsV-nA-0rG"/>
+                <outletCollection property="gestureRecognizers" destination="0C3-Dr-7ud" appends="YES" id="80E-O3-PHw"/>
+                <outletCollection property="gestureRecognizers" destination="nM6-Xm-O9d" appends="YES" id="Uqr-ZF-IJU"/>
+            </connections>
         </view>
+        <pinchGestureRecognizer id="Icb-VK-0te">
+            <connections>
+                <action selector="pinchAct" destination="-1" id="8bf-TJ-c48"/>
+            </connections>
+        </pinchGestureRecognizer>
+        <rotationGestureRecognizer id="B2N-Fv-IKj">
+            <connections>
+                <action selector="rotationAct" destination="-1" id="HRQ-Lu-52T"/>
+            </connections>
+        </rotationGestureRecognizer>
+        <swipeGestureRecognizer direction="right" id="WXT-yL-vSz">
+            <connections>
+                <action selector="swipeAct" destination="-1" id="4BA-FU-jh9"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="0C3-Dr-7ud">
+            <connections>
+                <action selector="panAct" destination="-1" id="7JQ-pU-KT6"/>
+            </connections>
+        </panGestureRecognizer>
+        <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="nM6-Xm-O9d">
+            <connections>
+                <action selector="screenEdgePanAct" destination="-1" id="nju-hU-XDn"/>
+            </connections>
+        </screenEdgePanGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="GuD-Yf-fD8">
+            <connections>
+                <action selector="longPressAct" destination="-1" id="rkx-u8-UU7"/>
+            </connections>
+        </pongPressGestureRecognizer>
     </objects>
 </document>

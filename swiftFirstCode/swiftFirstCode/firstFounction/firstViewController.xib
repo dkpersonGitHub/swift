@@ -41,6 +41,24 @@
                         <action selector="pushVedioView" destination="-1" eventType="touchUpInside" id="LF0-IE-WOm"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rix-Lu-3JA">
+                    <rect key="frame" x="173" y="124" width="73" height="30"/>
+                    <state key="normal" title="gesture">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushGestureView" destination="-1" eventType="touchUpInside" id="3rr-5O-gEm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5k-T7-Fkr">
+                    <rect key="frame" x="39" y="177" width="69" height="30"/>
+                    <state key="normal" title="base">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushBaseView" destination="-1" eventType="touchUpInside" id="s6f-Eu-0ht"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
